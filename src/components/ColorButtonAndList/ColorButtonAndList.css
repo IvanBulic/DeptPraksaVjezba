@@ -1,24 +1,41 @@
 .Button{
-    background-color: #343945;
-    outline-color: #343945;
-    border-radius: 5px;
-    border-color: #0e0f1381;
-    padding: 5px,5px,5px,5px;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #61dafb;
+    color: #000000;
+    padding: 10px 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    white-space: nowrap;
+    transition: background-color 0.2s ease-out;
+    -webkit-transition: background-color 0.2s ease-out;
+    -moz-transition: background-color 0.2s ease-out;
+    text-align: right;
+    margin: 0;
+    border: 0;
 }
 .Button:hover{
-    background-color: #0e0f1381;
+    background-color: white;
 }
 
 .ColorList{
     list-style-type: none;
-    text-align: start;
 }
-
 .ListElementWithControls{
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
 }
 
 .ArrowButton:hover{
     cursor:pointer;
+}
+
+.TextInput{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: none;
+    text-align: center;
 }
