@@ -13,3 +13,12 @@
     list-style-type: none;
     text-align: start;
 }
+
+.ListElementWithControls{
+    display: flex;
+    flex-direction: row;
+}
+
+.ArrowButton:hover{
+    cursor:pointer;
+}

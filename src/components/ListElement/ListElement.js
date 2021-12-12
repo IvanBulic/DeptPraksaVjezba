@@ -1,22 +1,22 @@
 import React,{Component} from "react";
+import "./ListElement.css";
 
 class ListElement extends Component {
     constructor(props) {
         super(props);
         this.state = 
-        { 
-            fontWeight: "Normal",
-            fontColor: this.props.color
-        }
-        
-        if (this.props.color===this.props.fontColor)
         {
-            this.props.fontWeight ="Bold"
+            fontColor: this.props.color
         }
     }
     render() { 
-        return (<li style={{color:this.props.color,}} key={this.props.color} font-weight={this.state.fontWeight}>{this.props.color} </li>);
+        var fontWeight = "normal"; 
+        if (this.state.fontColor===this.props.buttonTextColor) {
+            fontWeight= "bold"
+        } 
+        return (<li className="MainElement" style={{color:this.props.color,fontWeight:fontWeight}} key={this.props.color}> {this.props.color} </li>);
     }
 }
  
 export default ListElement;
+
