@@ -22,7 +22,10 @@
 }
 
 .ColorList{
+    display: flex;
     list-style-type: none;
+    align-items: center;
+    flex-direction: column; 
 }
 .ListElementWithControls{
     display: flex;
